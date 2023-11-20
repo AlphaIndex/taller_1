@@ -13,5 +13,3 @@ if [ -n "$(git status -s)" ]; then
 else
     echo "No se han realizado cambios en el repositorio esta semana."
 fi
-
-echo -e "Líneas modificadas en el último commit: $lineas_modificadas." >> README.md
