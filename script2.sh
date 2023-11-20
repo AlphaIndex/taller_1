@@ -9,7 +9,7 @@ if [ -n "$(git status -s)" ]; then
 
     lineas_modificadas=$(git diff --shortstat HEAD | awk '{print $1}')
 
-    echo "Se han realizado cambios en el repositorio. Líneas modificadas: $lineas_modificadas" >> /home/guille/Documentos/obligatorio2/guardar/readme.md
+    echo "Se han realizado cambios en el repositorio. Líneas modificadas: $lineas_modificadas" >> readme.md
 else
-    echo "No se han realizado cambios en el repositorio esta semana." >> /home/guille/Documentos/obligatorio2/guardar/readme.md
+    echo "No se han realizado cambios en el repositorio esta semana." >> readme.md
 fi
